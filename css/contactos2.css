@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.barra-navegacion {
+    background-color: #333;
+    overflow: hidden;
+}
+.encabezado-barra-navegacion h1 {
+    color: white;
+}
+.barra-navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.barra-navegacion li {
+    float: left;
+}
+.barra-navegacion a, .dropdown-btn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.barra-navegacion a:hover, .dropdown:hover .dropdown-btn {
+    background-color: red;
+    color: white;
+}
+.barra-navegacion .dropdown {
+    display: inline-block;
+}
+.encabezado-barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+/* Seccion-Barra de búsqueda */
+.contenedor-busqueda {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.contenedor-busqueda input[type=text] {
+    padding: 6px;
+    margin-left: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 15px;
+}
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.contenido-desplegable a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.contenido-desplegable a:hover {
+    background-color: #f1f1f1;
+}
+/* mostrar menu al pasar el mause por el botón */
+.desplegable:hover .contenido-desplegable {
+    display: block;
+}
+.contenido-desplegable a:hover {
+    color: red;
+}
+
+/* Formulario Contactos*/
+.formulario-contacto {
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin-top: 20px; 
+    flex: 2;
+    margin-left: 20px; 
+}
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto label {
+    width: 50%; /*Tamaño barra de formulario*/
+    padding: 6px; /*ancho barra*/
+    margin-bottom: 0px; /*separacion entre barras*/
+    display: block;
+}
+.formulario-contacto button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+.formulario-contacto button:hover {
+    background-color: #45a049;
+}
+
+.informacion-contacto {
+    flex: 1;
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+.informacion-contacto p {
+    transition: background-color 0.3s ease;
+}
+.informacion-contacto p:hover {
+    background-color: red;
+}
+.whatsapp-img {
+    height: 1.8em;
+    vertical-align: middle;
+}
+.carta-img {
+    height: 1.8em;
+    vertical-align: middle;
+}
+.llamar-img {
+    height: 1.8em;
+    vertical-align: middle;
+}
+.formulario-contacto label {
+    display: flex;
+    align-items: center;
+}
+.formulario-contacto input[type="checkbox"] {
+    margin-left: 10px;
+}
+.mexico-img {
+    height: 1em;
+    vertical-align: middle;
+}
+.contenedor {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Seccion-Pie de página */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: lightblue;
+}
+.logos-empresa img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.enlaces-footer {
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.seccion-enlace {
+    flex: 1;
+    margin-right: 20px;
+}
+.seccion-enlace:last-child {
+    margin-right: 0;
+}
+.seccion-enlace a {
+    color: black;
+    transition: color 0.3s ease;
+}
+.seccion-enlace a:hover {
+    color: #ff0000;
+}
+.seccion-enlace h4 {
+    color: rgb(78, 78, 220);
+}
+.contenedor-enlaces-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contenedor-enlaces-footer h4 {
+    margin-bottom: 20px;
+}
+.contenedor-enlaces-footer a {
+    margin-bottom: 10px;
+}
